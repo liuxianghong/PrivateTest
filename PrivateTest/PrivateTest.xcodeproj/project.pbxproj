@@ -14,6 +14,7 @@
 		D39E73A41C9C08C700530B3F /* PrivateListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39E73A31C9C08C700530B3F /* PrivateListTableViewController.m */; };
 		D39E73A71C9C091200530B3F /* BleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39E73A61C9C091200530B3F /* BleViewController.m */; };
 		D39E73AA1C9C0B4200530B3F /* FTServicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39E73A91C9C0B4200530B3F /* FTServicesTableViewController.m */; };
+		D39E73AF1C9C22C800530B3F /* LSApplicationWorkspaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39E73AE1C9C22C800530B3F /* LSApplicationWorkspaceTableViewController.m */; };
 		D3EE66341C999164003671D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE66331C999164003671D4 /* main.m */; };
 		D3EE66371C999164003671D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE66361C999164003671D4 /* AppDelegate.m */; };
 		D3EE663A1C999164003671D4 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE66391C999164003671D4 /* WeatherViewController.m */; };
@@ -35,6 +36,9 @@
 		D39E73A61C9C091200530B3F /* BleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleViewController.m; sourceTree = "<group>"; };
 		D39E73A81C9C0B4200530B3F /* FTServicesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTServicesTableViewController.h; sourceTree = "<group>"; };
 		D39E73A91C9C0B4200530B3F /* FTServicesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTServicesTableViewController.m; sourceTree = "<group>"; };
+		D39E73AD1C9C22C800530B3F /* LSApplicationWorkspaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspaceTableViewController.h; sourceTree = "<group>"; };
+		D39E73AE1C9C22C800530B3F /* LSApplicationWorkspaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSApplicationWorkspaceTableViewController.m; sourceTree = "<group>"; };
+		D3A097C61C9C466F00EE185A /* LSApplicationProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
 		D3EE662F1C999164003671D4 /* PrivateTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivateTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE66331C999164003671D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3EE66351C999164003671D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,8 +101,6 @@
 		D3EE66311C999164003671D4 /* testBle */ = {
 			isa = PBXGroup;
 			children = (
-				D3EE66381C999164003671D4 /* WeatherViewController.h */,
-				D3EE66391C999164003671D4 /* WeatherViewController.m */,
 				D3EE663B1C999164003671D4 /* Main.storyboard */,
 				D3EE663E1C999164003671D4 /* Assets.xcassets */,
 				D39E73A21C9C08C700530B3F /* PrivateListTableViewController.h */,
@@ -113,6 +115,11 @@
 				D39E73A61C9C091200530B3F /* BleViewController.m */,
 				D39E73A81C9C0B4200530B3F /* FTServicesTableViewController.h */,
 				D39E73A91C9C0B4200530B3F /* FTServicesTableViewController.m */,
+				D3EE66381C999164003671D4 /* WeatherViewController.h */,
+				D3EE66391C999164003671D4 /* WeatherViewController.m */,
+				D3A097C61C9C466F00EE185A /* LSApplicationProxy.h */,
+				D39E73AD1C9C22C800530B3F /* LSApplicationWorkspaceTableViewController.h */,
+				D39E73AE1C9C22C800530B3F /* LSApplicationWorkspaceTableViewController.m */,
 			);
 			path = testBle;
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3EE663A1C999164003671D4 /* WeatherViewController.m in Sources */,
+				D39E73AF1C9C22C800530B3F /* LSApplicationWorkspaceTableViewController.m in Sources */,
 				D39E739E1C9C061C00530B3F /* NSObject+methods.m in Sources */,
 				D39E73A71C9C091200530B3F /* BleViewController.m in Sources */,
 				D3EE66371C999164003671D4 /* AppDelegate.m in Sources */,

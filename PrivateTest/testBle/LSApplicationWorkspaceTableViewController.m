@@ -1,19 +1,25 @@
 //
-//  PrivateListTableViewController.m
+//  SpringBoardServicesTableViewController.m
 //  PrivateTest
 //
 //  Created by 刘向宏 on 16/3/18.
 //  Copyright © 2016年 刘向宏. All rights reserved.
 //
 
-#import "PrivateListTableViewController.h"
+#import "LSApplicationWorkspaceTableViewController.h"
 
-@interface PrivateListTableViewController ()
+#import "NSObject+methods.h"
+
+#import <MobileCoreServices/MobileCoreServices.h>
+#import "LSApplicationProxy.h"
+
+
+@interface LSApplicationWorkspaceTableViewController ()
 
 @end
 
-@implementation PrivateListTableViewController{
-    NSArray *array;
+@implementation LSApplicationWorkspaceTableViewController{
+    NSArray *apps;
 }
 
 - (void)viewDidLoad {
@@ -24,8 +30,14 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    array = @[@"BluetoothManager",@"Weather",@"FTServices",@"LSApplicationWorkspace"];
+    
+    Class LSApplicationWorkspace_class = objc_getClass("LSApplicationWorkspace");
+    NSObject* workspace = [LSApplicationWorkspace_class performSelector:@selector(defaultWorkspace)];
+    apps = [workspace performSelector:@selector(allApplications)];
+    NSLog(@"apps: %@", apps);
+    [apps.firstObject logMethods];
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -41,7 +53,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return array.count;
+    return apps.count;
 }
 
 
@@ -49,15 +61,21 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = array[indexPath.row];
-    
+    cell.textLabel.text = [apps[indexPath.row] itemName];
+    cell.detailTextLabel.text = [apps[indexPath.row] applicationIdentifier];
+//    LSApplicationProxy *p = apps[indexPath.row];
+//    NSLog(@"%@",p.vendorName);
+//    NSLog(@"%@",p.itemName);
+//    NSLog(@"%@",p.applicationType);
+//    NSLog(@"%@",p.applicationDSID);
+//    NSLog(@"%@",p.applicationVariant);
+//    NSLog(@"%@",p.sourceAppIdentifier);
+//    cell.imageView.image = [UIImage imageWithData:[p iconDataForVariant:0]];
+//    NSLog(@"UIImage %@",[UIImage imageWithData:[p iconDataForVariant:0]]);
+//    NSLog(@"UIImage %@",[p privateDocumentIconNames]);
+//    NSLog(@"UIImage %@",[p privateIconsDictionary]);
     return cell;
 }
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self performSegueWithIdentifier:array[indexPath.row] sender:nil];
-}
-
 
 /*
 // Override to support conditional editing of the table view.

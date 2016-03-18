@@ -98,7 +98,7 @@
     [city update];
     NSLog(@"%@",[city updateTimeString]);
     [cu setRequestedCities:@[city]];
-    [cu updateWeatherForCities:@[city] withCompletionHandler:^(id anyobject,id anyobject2,id anyobject3){
+    [cu updateWeatherForCities:@[city] withCompletionHandler:^(id anyobject){
         NSLog(@"Completion :%@",anyobject);
         NSLog(@"windSpeed:%f,windChill:%f",city.windSpeed,city.windChill);
         NSLog(@"%@",city.temperature);
