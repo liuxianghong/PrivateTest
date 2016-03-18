@@ -7,9 +7,8 @@
 //
 
 #import <CoreLocation/CoreLocation.h>
-#import "ViewController.h"
+#import "WeatherViewController.h"
 
-#import "BluetoothManager.h"
 #import <WeatherUI/WUIAsynchronousAssetLoader.h>
 #import <Weather/City.h>
 #import <CoreLocation/CoreLocation.h>
@@ -20,21 +19,19 @@
 
 
 
-@interface ViewController ()<CLLocationManagerDelegate>
+@interface WeatherViewController ()<CLLocationManagerDelegate>
 @end
 
-@implementation ViewController{
+@implementation WeatherViewController{
     CLLocationManager *_locationManager;
     TWCCityUpdater *cu;
-    BluetoothManager *manager;
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    manager = [BluetoothManager sharedInstance];
-    [manager logMethods];
-    [self performSelector:@selector(bleIformation) withObject:nil afterDelay:1.0f] ;
+    
     WUIAsynchronousAssetLoader *loader = [WUIAsynchronousAssetLoader sharedAssetLoader];
     City *city = [[City alloc] init];
     CLLocation *l = [[CLLocation alloc] initWithLatitude:10 longitude:10];
@@ -50,21 +47,7 @@
     }];
     
     
-    NSBundle *bb = [NSBundle bundleWithPath:@"/System/Library/PrivateFrameworks/FTServices.framework"];
-    if ([bb load]) {
-        Class FTDeviceSupport = NSClassFromString(@"FTDeviceSupport");
-        id si = [FTDeviceSupport valueForKey:@"sharedInstance"];
-        NSLog(@"%@",si);
-        NSLog(@"-- %@", [si valueForKey:@"deviceInformationString"]);
-        NSLog(@"-- %@", [si valueForKey:@"model"]);
-        NSLog(@"-- %@", [si valueForKey:@"deviceName"]);
-        NSLog(@"-- %@", [si valueForKey:@"deviceColor"]);
-        NSLog(@"-- %@", [si valueForKey:@"productName"]);
-        NSLog(@"-- %@", [si valueForKey:@"productVersion"]);
-        NSLog(@"-- %@", [si valueForKey:@"userAgentString"]);
-        NSLog(@"-- %@", [si valueForKey:@"CTNetworkInformation"]);
-        NSLog(@"-- %@", [si valueForKey:@"deviceTypeIDPrefix"]);
-    }
+    
     
     
     
@@ -98,21 +81,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)bleClick:(id)sender
-{
-    BOOL currentState = [manager enabled] ;
-    [manager setEnabled:!currentState];
-    [manager setPowered:!currentState];
-    NSLog(@"%@",[manager pairedDevices]);
-    NSLog(@"%@",[manager connectedDevices]);
-    NSLog(@"%@",[manager connectingDevices]);
-    NSLog(@"%d",[BluetoothManager lastInitError]);
-    
-}
 
--(void)bleIformation{
-    NSLog(@"%@",[manager localAddress]);
-}
 
 #pragma mark - CoreLocation 代理
 #pragma mark 跟踪定位代理方法，每次位置发生变化即会执行（只要定位到相应位置）

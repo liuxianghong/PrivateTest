@@ -11,9 +11,12 @@
 		D38307571C9A54150028D73A /* BluetoothManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38307561C9A54150028D73A /* BluetoothManager.framework */; };
 		D38307591C9A57390028D73A /* Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38307581C9A57390028D73A /* Weather.framework */; };
 		D39E739E1C9C061C00530B3F /* NSObject+methods.m in Sources */ = {isa = PBXBuildFile; fileRef = D39E739D1C9C061C00530B3F /* NSObject+methods.m */; };
+		D39E73A41C9C08C700530B3F /* PrivateListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39E73A31C9C08C700530B3F /* PrivateListTableViewController.m */; };
+		D39E73A71C9C091200530B3F /* BleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39E73A61C9C091200530B3F /* BleViewController.m */; };
+		D39E73AA1C9C0B4200530B3F /* FTServicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39E73A91C9C0B4200530B3F /* FTServicesTableViewController.m */; };
 		D3EE66341C999164003671D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE66331C999164003671D4 /* main.m */; };
 		D3EE66371C999164003671D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE66361C999164003671D4 /* AppDelegate.m */; };
-		D3EE663A1C999164003671D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE66391C999164003671D4 /* ViewController.m */; };
+		D3EE663A1C999164003671D4 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE66391C999164003671D4 /* WeatherViewController.m */; };
 		D3EE663D1C999164003671D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EE663B1C999164003671D4 /* Main.storyboard */; };
 		D3EE663F1C999164003671D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3EE663E1C999164003671D4 /* Assets.xcassets */; };
 		D3EE66421C999164003671D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EE66401C999164003671D4 /* LaunchScreen.storyboard */; };
@@ -26,12 +29,18 @@
 		D38307581C9A57390028D73A /* Weather.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Weather.framework; path = testBle/Weather.framework; sourceTree = "<group>"; };
 		D39E739C1C9C061C00530B3F /* NSObject+methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+methods.h"; sourceTree = "<group>"; };
 		D39E739D1C9C061C00530B3F /* NSObject+methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+methods.m"; sourceTree = "<group>"; };
+		D39E73A21C9C08C700530B3F /* PrivateListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateListTableViewController.h; sourceTree = "<group>"; };
+		D39E73A31C9C08C700530B3F /* PrivateListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateListTableViewController.m; sourceTree = "<group>"; };
+		D39E73A51C9C091200530B3F /* BleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleViewController.h; sourceTree = "<group>"; };
+		D39E73A61C9C091200530B3F /* BleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleViewController.m; sourceTree = "<group>"; };
+		D39E73A81C9C0B4200530B3F /* FTServicesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTServicesTableViewController.h; sourceTree = "<group>"; };
+		D39E73A91C9C0B4200530B3F /* FTServicesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTServicesTableViewController.m; sourceTree = "<group>"; };
 		D3EE662F1C999164003671D4 /* PrivateTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivateTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE66331C999164003671D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3EE66351C999164003671D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3EE66361C999164003671D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D3EE66381C999164003671D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D3EE66391C999164003671D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D3EE66381C999164003671D4 /* WeatherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
+		D3EE66391C999164003671D4 /* WeatherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
 		D3EE663C1C999164003671D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3EE663E1C999164003671D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3EE66411C999164003671D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,20 +97,22 @@
 		D3EE66311C999164003671D4 /* testBle */ = {
 			isa = PBXGroup;
 			children = (
-				D3EE66351C999164003671D4 /* AppDelegate.h */,
-				D3EE66361C999164003671D4 /* AppDelegate.m */,
-				D3EE66381C999164003671D4 /* ViewController.h */,
-				D3EE66391C999164003671D4 /* ViewController.m */,
+				D3EE66381C999164003671D4 /* WeatherViewController.h */,
+				D3EE66391C999164003671D4 /* WeatherViewController.m */,
 				D3EE663B1C999164003671D4 /* Main.storyboard */,
 				D3EE663E1C999164003671D4 /* Assets.xcassets */,
-				D3EE66401C999164003671D4 /* LaunchScreen.storyboard */,
-				D3EE66431C999164003671D4 /* Info.plist */,
+				D39E73A21C9C08C700530B3F /* PrivateListTableViewController.h */,
+				D39E73A31C9C08C700530B3F /* PrivateListTableViewController.m */,
 				D3EE66321C999164003671D4 /* Supporting Files */,
 				D3EE66491C999175003671D4 /* BluetoothDevice.h */,
 				D3EE664A1C99925B003671D4 /* RemoteDeviceManager.h */,
 				D3EE664B1C9992AF003671D4 /* BluetoothManager.h */,
 				D39E739C1C9C061C00530B3F /* NSObject+methods.h */,
 				D39E739D1C9C061C00530B3F /* NSObject+methods.m */,
+				D39E73A51C9C091200530B3F /* BleViewController.h */,
+				D39E73A61C9C091200530B3F /* BleViewController.m */,
+				D39E73A81C9C0B4200530B3F /* FTServicesTableViewController.h */,
+				D39E73A91C9C0B4200530B3F /* FTServicesTableViewController.m */,
 			);
 			path = testBle;
 			sourceTree = "<group>";
@@ -109,6 +120,10 @@
 		D3EE66321C999164003671D4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D3EE66351C999164003671D4 /* AppDelegate.h */,
+				D3EE66361C999164003671D4 /* AppDelegate.m */,
+				D3EE66431C999164003671D4 /* Info.plist */,
+				D3EE66401C999164003671D4 /* LaunchScreen.storyboard */,
 				D3EE66331C999164003671D4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -184,10 +199,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3EE663A1C999164003671D4 /* ViewController.m in Sources */,
+				D3EE663A1C999164003671D4 /* WeatherViewController.m in Sources */,
 				D39E739E1C9C061C00530B3F /* NSObject+methods.m in Sources */,
+				D39E73A71C9C091200530B3F /* BleViewController.m in Sources */,
 				D3EE66371C999164003671D4 /* AppDelegate.m in Sources */,
 				D3EE66341C999164003671D4 /* main.m in Sources */,
+				D39E73A41C9C08C700530B3F /* PrivateListTableViewController.m in Sources */,
+				D39E73AA1C9C0B4200530B3F /* FTServicesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
