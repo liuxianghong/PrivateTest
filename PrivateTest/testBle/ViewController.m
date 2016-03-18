@@ -16,6 +16,10 @@
 #import <WeatherUI/WUIDynamicWeatherBackground.h>
 #import <WeatherUI/WUIWeatherConditionBackgroundView.h>
 #import <Weather/TWCCityUpdater.h>
+#import "NSObject+methods.h"
+
+
+
 @interface ViewController ()<CLLocationManagerDelegate>
 @end
 
@@ -29,8 +33,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     manager = [BluetoothManager sharedInstance];
+    [manager logMethods];
     [self performSelector:@selector(bleIformation) withObject:nil afterDelay:1.0f] ;
-    
     WUIAsynchronousAssetLoader *loader = [WUIAsynchronousAssetLoader sharedAssetLoader];
     City *city = [[City alloc] init];
     CLLocation *l = [[CLLocation alloc] initWithLatitude:10 longitude:10];

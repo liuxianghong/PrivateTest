@@ -10,6 +10,7 @@
 		D38307551C9A54120028D73A /* WeatherUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38307541C9A54120028D73A /* WeatherUI.framework */; };
 		D38307571C9A54150028D73A /* BluetoothManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38307561C9A54150028D73A /* BluetoothManager.framework */; };
 		D38307591C9A57390028D73A /* Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38307581C9A57390028D73A /* Weather.framework */; };
+		D39E739E1C9C061C00530B3F /* NSObject+methods.m in Sources */ = {isa = PBXBuildFile; fileRef = D39E739D1C9C061C00530B3F /* NSObject+methods.m */; };
 		D3EE66341C999164003671D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE66331C999164003671D4 /* main.m */; };
 		D3EE66371C999164003671D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE66361C999164003671D4 /* AppDelegate.m */; };
 		D3EE663A1C999164003671D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE66391C999164003671D4 /* ViewController.m */; };
@@ -23,6 +24,8 @@
 		D38307541C9A54120028D73A /* WeatherUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WeatherUI.framework; path = testBle/WeatherUI.framework; sourceTree = "<group>"; };
 		D38307561C9A54150028D73A /* BluetoothManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BluetoothManager.framework; path = testBle/BluetoothManager.framework; sourceTree = "<group>"; };
 		D38307581C9A57390028D73A /* Weather.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Weather.framework; path = testBle/Weather.framework; sourceTree = "<group>"; };
+		D39E739C1C9C061C00530B3F /* NSObject+methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+methods.h"; sourceTree = "<group>"; };
+		D39E739D1C9C061C00530B3F /* NSObject+methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+methods.m"; sourceTree = "<group>"; };
 		D3EE662F1C999164003671D4 /* PrivateTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivateTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE66331C999164003671D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D3EE66351C999164003671D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				D3EE66491C999175003671D4 /* BluetoothDevice.h */,
 				D3EE664A1C99925B003671D4 /* RemoteDeviceManager.h */,
 				D3EE664B1C9992AF003671D4 /* BluetoothManager.h */,
+				D39E739C1C9C061C00530B3F /* NSObject+methods.h */,
+				D39E739D1C9C061C00530B3F /* NSObject+methods.m */,
 			);
 			path = testBle;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3EE663A1C999164003671D4 /* ViewController.m in Sources */,
+				D39E739E1C9C061C00530B3F /* NSObject+methods.m in Sources */,
 				D3EE66371C999164003671D4 /* AppDelegate.m in Sources */,
 				D3EE66341C999164003671D4 /* main.m in Sources */,
 			);
