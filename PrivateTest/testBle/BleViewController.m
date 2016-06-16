@@ -33,6 +33,7 @@
 
 - (IBAction)bleClick:(id)sender
 {
+    
     BOOL currentState = [manager enabled] ;
     [manager setEnabled:!currentState];
     [manager setPowered:!currentState];
